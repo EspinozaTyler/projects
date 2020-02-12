@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+		<script type="text/javascript" src="LuckySevens.js"></script>
+	</head>
+	<body>
+		<div class="container col-8">
+			<h1 style="margin-top: 20px; text-align: center;">Lucky Sevens</h1>
+			<form name="lucky" onsubmit=" return play();">
+				<div class="input text">
+					<label class="col-6" for="bet" style=" padding: 0px; font-weight: bold; text-align: right;">Starting Bet:</label> &nbsp;&nbsp; 
+					<input class="col-2" placeholder="$0.00" style="spaceholder: $0.00" type="text" id="bet" class="form-control">
+				</div>
+				<br />
+				<div class="button" style="text-align: center;">
+					<button type="submit" id="submitButton" class="btn btn-primary">Play</button>
+				</div>
+			</form>
+			<br />
+			
+			
+				<table id="results" class="table table-striped col-10" style="text-align: center; display: none; margin-left: auto; margin-right: auto;">
+					
+					<thead>
+						<td colspan="2"; style="font-size: 24px; border-top-color: black;">Results</td>
+					</thead>
+						<tr>
+							<td>Starting Bet</td>
+							<td><span id="start"></span></td>
+						</tr>
+						<tr>
+							<td>Total Rolls Before Going Broke</td>
+							<td><span  id="rollsNum"></span></td>
+						</tr>
+						<tr>
+							<td>Highest Amount Won</td>
+							<td><span id="max"></span></td>
+						</tr>
+						<tr>
+							<td>Roll Count At Highest Amount Won</td>
+							<td><span id="rollsAtMax"></span></td>
+						</tr>
+				</table>
+				
+		</div>
+			
+			
+		<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>	
+	</body>
+</html>

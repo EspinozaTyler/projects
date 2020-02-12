@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css?family=Alegreya+Sans+SC|Julius+Sans+One');
+
+header, footer
+{
+	background-color: #80BD9E;
+	text-align: center;
+	color: #000080;
+	font-size: 20px;
+}	
+
+footer
+	padding-bottom: 5px;
+}
+		
+		
+a:link { text-decoration: none; color: #000080; }
+a:hover { color: #00FF00; font-weight: bold;}
+a:visited { color: purple; }
+a:active { color: blue; text-decoration: none;}
+		
+nav .btn{
+	background-color: #5b7d87;
+}
