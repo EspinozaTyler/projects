@@ -1,7 +1,3 @@
-// This is OPTION # 1 of Form Validation //
-
-
-
 function valid() {
   var name = document.forms["contact"]["Name"];
   var email = document.forms["contact"]["Email"];
